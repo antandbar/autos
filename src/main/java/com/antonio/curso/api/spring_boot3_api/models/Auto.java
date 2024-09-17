@@ -25,7 +25,7 @@ public class Auto {
     private String marca;
     private String modelo;
     private String color;
-    private String anio;
+    private Long anio;
 
     
 }

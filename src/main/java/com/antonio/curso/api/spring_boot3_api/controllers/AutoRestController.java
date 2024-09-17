@@ -17,7 +17,7 @@ import com.antonio.curso.api.spring_boot3_api.models.Auto;
 import com.antonio.curso.api.spring_boot3_api.services.AutoService;
 
 @RestController
-@RequestMapping("/api/autos")
+@RequestMapping("/api/autos/")
 public class AutoRestController {
 
     @Autowired
