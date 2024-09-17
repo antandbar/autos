@@ -12,6 +12,6 @@ public interface IAutosRepository extends JpaRepository<Auto, Long>{
     List<Auto> findByMarca(String marca);
     List<Auto> findByColor(String color);
     List<Auto> findByModelo(String modelo);
-    List<Auto> findByAnio(String anio);
+    List<Auto> findByAnio(Long anio);
 
 }

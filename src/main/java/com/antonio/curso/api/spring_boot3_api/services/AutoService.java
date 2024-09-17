@@ -31,7 +31,7 @@ public class AutoService {
     }
 
     //Metodo para buscar un auto por un id especifico
-    Optional<Auto> buscarPorId(Long id) {
+    public Optional<Auto> buscarPorId(Long id) {
         return autoRepo.findById(id);
     }
 
@@ -41,24 +41,24 @@ public class AutoService {
     }
 
     //Metodo para eliminar un auto
-    public void eliminarAuto(Long id) {
+    public void eliminarAutoPorId(Long id) {
         autoRepo.deleteById(id);
     }
 
     //Metodo para buscar según atributos propios de la clase
-    List<Auto> buscarPorMarca(String marca) {
+    public List<Auto> buscarPorMarca(String marca) {
         return autoRepo.findByMarca(marca);
     }
 
-    List<Auto> buscarPorModels(String modelo){
+    public List<Auto> buscarPorModels(String modelo){
         return autoRepo.findByModelo(modelo);
     }
 
-    List<Auto> buscarPorColor(String Color){
+    public List<Auto> buscarPorColor(String Color){
         return autoRepo.findByColor(Color);
     }
 
-    List<Auto> buscarPorAnio(String anio) {
+    public List<Auto> buscarPorAnio(Long anio) {
         return autoRepo.findByAnio(anio);
     }
 }
